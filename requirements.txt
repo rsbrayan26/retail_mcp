@@ -1,1 +1,11 @@
 mcp[cli]
+
+{
+  "mcpServers": {
+    "retail-plus": {
+      "command": "D:\\code\\retail_mcp\\.venv\\Scripts\\python.exe",
+      "args": [
+        "D:\\code\\retail_mcp\\server.py"
+      ]
+    }
+}

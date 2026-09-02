@@ -1,0 +1,21 @@
+¡Perfecto! Eso confirma que el servidor MCP está funcionando y respondiendo correctamente a las tool calls.
+
+Ahora el paso que falta para completar tu entrega es probar exactamente lo mismo pero **desde Claude Desktop** (no desde el Inspector), porque ahí es donde se ve la pieza que realmente están evaluando: el LLM decidiendo por sí solo cuándo necesita llamar la tool.
+
+## Checklist para cerrar la entrega
+
+1. **Abre la app de Claude Desktop** (no el Inspector).
+2. Verifica que `retail-plus` aparezca conectado en el ícono de herramientas 🔨.
+3. Haz ahí, en el chat, las 3 preguntas:
+   - "¿Tienes el iPhone 15 en el catálogo? ¿Qué precio tiene?" → debería llamar `buscar_producto` o `consultar_precio`
+   - "¿Cuántas unidades quedan del PlayStation 5?" → debería llamar `consultar_stock`
+   - "Dame 3 recomendaciones para mejorar la atención al cliente en una tienda de electrónica" → NO debería llamar ninguna tool
+4. Captura pantalla de cada respuesta, especialmente el aviso de "quiere usar retail-plus" que aparece antes de que Claude ejecute la tool en las dos primeras.
+
+¿Ya la tienes abierta y conectada, o prefieres que primero te ayude a preparar el README/documentación de la arquitectura mientras terminas de correr las pruebas ahí?
+
+
+usa retail-plus
+¿Cuántas unidades quedan del PlayStation 5?
+lista los archivos de la carpeta
+respuesta corta en una linea
